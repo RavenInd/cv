@@ -1,0 +1,9 @@
+const COLORS = {
+  ACCENT_COLOR: '#6667ab',
+  SUB_ACCENT_COLOR: '#3B3EFF',
+  COMPLIMENT_COLOR: '#E8C21E',
+  MAIN_TEXT: '#131527',
+  TITLE_TEXT: '#131527',
+};
+
+export default COLORS;

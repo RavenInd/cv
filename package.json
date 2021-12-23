@@ -1,0 +1,109 @@
+{
+  "name": "cv-kravtsevich-s",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-typescript": "^7.16.0",
+    "@material-ui/styles": "^4.11.3",
+    "@nivo/bar": "^0.73.1",
+    "@nivo/core": "^0.70.1",
+    "@nivo/pie": "^0.70.1",
+    "@stripe/react-stripe-js": "^1.4.0",
+    "@stripe/stripe-js": "^1.13.2",
+    "@types/node": "^12.12.47",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-dropzone": "^5.1.0",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/react-tabs": "^2.3.2",
+    "@types/react-text-mask": "^5.4.6",
+    "@types/react-transition-group": "^4.4.2",
+    "@types/react-virtualized": "^9.21.8",
+    "@types/recompose": "^0.30.7",
+    "@types/redux": "^3.6.0",
+    "@types/redux-mock-store": "^1.0.2",
+    "axios": "^0.21.1",
+    "clsx": "^1.1.0",
+    "i18n-react": "^0.7.0",
+    "i18next": "^19.3.3",
+    "i18next-browser-languagedetector": "^4.0.2",
+    "i18next-xhr-backend": "latest",
+    "lottie-react": "^2.1.0",
+    "node-sass": "^5.0.0",
+    "rc-slider": "^9.7.1",
+    "react": "^16.13.0",
+    "react-colorful": "^5.4.0",
+    "react-content-loader": "^6.0.2",
+    "react-day-picker": "^7.4.10",
+    "react-dom": "^16.13.0",
+    "react-dropzone": "^11.0.1",
+    "react-easy-crop": "^3.3.2",
+    "react-google-login": "^5.2.2",
+    "react-i18next": "^11.3.3",
+    "react-input-verification-code": "^0.6.4",
+    "react-qr-code": "^1.1.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-tabs": "^3.2.0",
+    "react-text-mask": "^5.4.3",
+    "react-transition-group": "^4.3.0",
+    "react-use-intercom": "^1.2.0",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.5",
+    "redux-mock-store": "^1.5.4",
+    "redux-thunk": "^2.3.0",
+    "ts-transformer-keys": "^0.4.3",
+    "typescript": "^4.4.9"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.2.1",
+    "react-test-renderer": "^16.13.1",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0"
+  },
+  "scripts": {
+    "start": "REACT_APP_STAGE='development' react-scripts start",
+    "build:staging": "REACT_APP_STAGE='staging' react-scripts build",
+    "build:production": "REACT_APP_STAGE='production' react-scripts build",
+    "test": "REACT_APP_STAGE='testing' react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": "prettier --write"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  }
+}
